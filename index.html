@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anmelden</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        </style>
+        <h1>Hier gibts noch nichts zu sehen!</h1> 
+</head>
+<body>
+  <h1>Diese Seite ist noch nicht öffentlich und noch im Entwicklungsstatus!</h1>
+  <h5>Bitte geben sie das Passwort ein, um fortzufahren!</h5>
+<form>
+    <label for="pswd">Hier Passwort eingeben:</label>
+    <input type="password" id="pswd">
+    <input type="button" class="button" value="Abschicken" onclick="checkPswd();" />
+</form>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "Getränke123";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="home.html";
+        }
+        
+        else{
+            alert("Falsches Passwort!");
+        }
+    }
+</script>
+
+
+<a href="tictactoe.html" class="link-button">Tic-Tac-Toe-Spielen</a>
+
+<style>
+  .link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .link-button:hover {
+    background-color: #ad0000;
+  }
+</style>
+
+<style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #5eff00;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  
+    .button:hover {
+      background-color: #37ad00;
+    }
+  </style>
+
+  <p>       </p>
+<a href="https://youtu.be/dQw4w9WgXcQ?si=ZTWUsZ9WHDLwtgoi">Version 1.6</a>
+<a href="https://youtu.be/dQw4w9WgXcQ?si=ZTWUsZ9WHDLwtgoi">vom 21.05.2024</a>
+</body>
+</html>
